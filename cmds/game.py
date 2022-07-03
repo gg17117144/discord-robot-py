@@ -7,6 +7,7 @@ from multiprocessing.connection import Listener
 from sqlite3 import connect
 from turtle import listen
 from types import MemberDescriptorType
+
 import discord
 from discord.ext import commands
 from core.classes import Cog_Extension
@@ -103,6 +104,11 @@ class Game(Cog_Extension):
 
 
    
+
+    async def game(ctx):
+        random_question = random.choice(jdate['question'])
+        question = discord.File(random_question)
+        await ctx.send(question)
 
 def setup(bot):
     bot.add_cog(Game(bot))
