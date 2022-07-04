@@ -24,6 +24,9 @@ class Game(Cog_Extension):
         player = ctx.author.voice.channel.members
         list1 = [1,2,3,4,5,6,7,8,9,10]
         l1 = random.sample(list1,7)
+        pn = len(player)
+        
+        print(pn)
         print(l1)
         print(l1[0],player[0])
         #print(l1[1],player[1])

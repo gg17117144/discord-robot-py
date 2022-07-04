@@ -56,7 +56,6 @@ class Main(Cog_Extension):
         print(data.emoji)
         if str(data.emoji) == '🎉':
             print('yes')
-            #await data.member.send('感恩')
             print(data.member)
             await data.member.send('感恩您沒有冷漠我,已讀我非常的感謝您！我好愛你:heart: ')
 
